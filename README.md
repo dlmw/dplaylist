@@ -16,7 +16,7 @@ For various reasons, you may prefer not to use your Google account but you would
 
 Let's take an example: [Rick Astley - Never Gonna Give You Up (Video)](https://www.youtube.com/watch?v=dQw4w9WgXcQ). The ID of the video is effectively **dQw4w9WgXcQ**.
 
-The following is an exhaustive list of the possible values that you may have in your text file :
+The following is an exhaustive list of the possible values that you may have in your text file:
 - https://www.youtube.com/watch?v=dQw4w9WgXcQ
 - https://youtu.be/dQw4w9WgXcQ
 - dQw4w9WgXcQ
@@ -26,3 +26,9 @@ Do **NOT** put a blank line at the end. One line is one video.
 ## Build
 
 1. Run `go build` or `go install`
+
+### Cross-compile
+
+Alternatively, you may wish to create an executable for Linux, MacOS (Darwin) and Windows.
+
+If so, run `./cross-compile.sh`
