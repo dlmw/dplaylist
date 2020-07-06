@@ -32,7 +32,7 @@ func generateURLFromIDs(videoIDs []string) string {
 		playlistLink.WriteString(",")
 	}
 
-	return playlistLink.String()
+	return strings.TrimSuffix(playlistLink.String(), ",")
 }
 
 // parseID removes any prefix (long or short YouTube link) and
