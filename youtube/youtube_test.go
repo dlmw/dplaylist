@@ -1,6 +1,7 @@
 package youtube
 
 import (
+	"fmt"
 	"strings"
 	"testing"
 )
@@ -9,6 +10,12 @@ var videoIDs []string = []string{"dQw4w9WgXcQ", "TYgOlqinH7A", "mOYZaiDZ7BM"}
 
 var youtubeLongLinkExample string = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 var youtubeShortLinkExample string = "https://youtu.be/dQw4w9WgXcQ"
+
+func ExampleCreatePlaylist() {
+	fmt.Println(CreatePlaylist(videoIDs))
+	// Output:
+	// https://www.youtube.com/watch_videos?video_ids=dQw4w9WgXcQ,TYgOlqinH7A,mOYZaiDZ7BM
+}
 
 func TestGenerateURLFromIDs(t *testing.T) {
 	expected := "https://www.youtube.com/watch_videos?video_ids=dQw4w9WgXcQ,TYgOlqinH7A,mOYZaiDZ7BM"
