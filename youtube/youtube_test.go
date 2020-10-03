@@ -6,10 +6,10 @@ import (
 	"testing"
 )
 
-var videoIDs []string = []string{"dQw4w9WgXcQ", "TYgOlqinH7A", "mOYZaiDZ7BM"}
+var videoIDs = []string{"dQw4w9WgXcQ", "TYgOlqinH7A", "mOYZaiDZ7BM"}
 
-var youtubeLongLinkExample string = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-var youtubeShortLinkExample string = "https://youtu.be/dQw4w9WgXcQ"
+var youtubeLongLinkExample = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+var youtubeShortLinkExample = "https://youtu.be/dQw4w9WgXcQ"
 
 func ExampleCreatePlaylist() {
 	fmt.Println(CreatePlaylist(videoIDs))

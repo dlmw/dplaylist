@@ -9,7 +9,7 @@ For various reasons, you may prefer not to use your Google account but you would
 1. Download the executable from the release section or build it yourself
 1. Open a Terminal (cmd.exe on Windows)
 1. Navigate to the location of the *dplaylist(.exe)* executable
-1. Execute it by passing your text file as an argument: `./dplaylist hip-hop.txt`
+1. Execute it by passing your text file as an argument: `./dplaylist -file=hip-hop.txt`
 1. The link is generated in the console
 
 ### Valid ID
